@@ -1,79 +1,79 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-// === Import tất cả 10 bài học Java cơ bản ===
-import Java01_GioiThieu from "./pages/posts/Java01_GioiThieu";
-import Java02_CaiDatMoiTruong from "./pages/posts/Java02_CaiDatMoiTruong";
-import Java03_HelloWorld from "./pages/posts/Java03_HelloWorld";
-import Java04_KieuDuLieu from "./pages/posts/Java04_KieuDuLieu";
-import Java05_ToanTu from "./pages/posts/Java05_ToanTu";
-import Java06_CauTrucDieuKien from "./pages/posts/Java06_CauTrucDieuKien";
-import Java07_VongLap from "./pages/posts/Java07_VongLap";
-import Java08_Mang from "./pages/posts/Java08_Mang";
-import Java09_Ham from "./pages/posts/Java09_Ham";
-import Java10_LopVaDoiTuong from "./pages/posts/Java10_LopVaDoiTuong";
+// === Import tất cả 10 bài học Lập Trình Mạng ===
+import Network01_GioiThieu from "./pages/posts/Network01_GioiThieu";
+import Network02_CauTrucMang from "./pages/posts/Network02_CauTrucMang";
+import Network03_TCP_UDP from "./pages/posts/Network03_TCP_UDP";
+import Network04_ClientServer from "./pages/posts/Network04_ClientServer";
+import Network05_Socket from "./pages/posts/Network05_Socket";
+import Network06_HTTP_RESTAPI from "./pages/posts/Network06_HTTP_RESTAPI";
+import Network07_MultiThread from "./pages/posts/Network07_MultiThread";
+import Network08_Security from "./pages/posts/Network08_Security";
+import Network09_FileTransfer from "./pages/posts/Network09_FileTransfer";
+import Network10_ChatApp from "./pages/posts/Network10_ChatApp";
 
 // === Trang chủ ===
 function Home() {
   const lessons = [
     {
-      id: "java01",
-      title: "Giới Thiệu Java",
-      desc: "Tổng quan về ngôn ngữ lập trình Java và ứng dụng.",
-      img: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+      id: "network01",
+      title: "Giới Thiệu Lập Trình Mạng",
+      desc: "Khái niệm cơ bản về mạng máy tính, mô hình OSI, TCP/IP và cách thiết bị giao tiếp.",
+      img: "https://cdn-icons-png.flaticon.com/512/483/483361.png",
     },
     {
-      id: "java02",
-      title: "Cài Đặt Môi Trường",
-      desc: "Hướng dẫn cài đặt JDK và môi trường lập trình.",
-      img: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+      id: "network02",
+      title: "Cấu Trúc Mạng & Giao Thức",
+      desc: "Hiểu rõ mô hình OSI, TCP/IP, vai trò từng tầng trong việc truyền dữ liệu.",
+      img: "https://cdn-icons-png.flaticon.com/512/4712/4712035.png",
     },
     {
-      id: "java03",
-      title: "Hello World",
-      desc: "Viết chương trình đầu tiên trong Java.",
-      img: "https://cdn-icons-png.flaticon.com/512/1006/1006363.png",
+      id: "network03",
+      title: "Kết Nối TCP & UDP",
+      desc: "Tìm hiểu hai giao thức truyền thông phổ biến và sự khác biệt giữa chúng.",
+      img: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
     },
     {
-      id: "java04",
-      title: "Kiểu Dữ Liệu",
-      desc: "Tìm hiểu các kiểu dữ liệu cơ bản trong Java.",
-      img: "https://cdn-icons-png.flaticon.com/512/2721/2721298.png",
+      id: "network04",
+      title: "Mô Hình Client - Server",
+      desc: "Nắm vững cách hoạt động giữa Client và Server trong ứng dụng mạng.",
+      img: "https://cdn-icons-png.flaticon.com/512/3208/3208687.png",
     },
     {
-      id: "java05",
-      title: "Toán Tử Trong Java",
-      desc: "Sử dụng các toán tử trong lập trình Java.",
-      img: "https://cdn-icons-png.flaticon.com/512/2103/2103633.png",
+      id: "network05",
+      title: "Lập Trình Socket",
+      desc: "Học cách gửi và nhận dữ liệu giữa các thiết bị qua socket.",
+      img: "https://cdn-icons-png.flaticon.com/512/619/619034.png",
     },
     {
-      id: "java06",
-      title: "Cấu Trúc Điều Kiện",
-      desc: "Sử dụng if, else và switch-case.",
-      img: "https://cdn-icons-png.flaticon.com/512/1336/1336494.png",
+      id: "network06",
+      title: "HTTP & REST API",
+      desc: "Hiểu cơ chế hoạt động của HTTP và xây dựng REST API cơ bản.",
+      img: "https://cdn-icons-png.flaticon.com/512/4225/4225683.png",
     },
     {
-      id: "java07",
-      title: "Vòng Lặp Trong Java",
-      desc: "for, while, do-while, foreach.",
-      img: "https://cdn-icons-png.flaticon.com/512/1841/1841214.png",
+      id: "network07",
+      title: "Đa Luồng Trong Mạng",
+      desc: "Ứng dụng đa luồng để xử lý nhiều kết nối cùng lúc.",
+      img: "https://cdn-icons-png.flaticon.com/512/3270/3270991.png",
     },
     {
-      id: "java08",
-      title: "Mảng Trong Java",
-      desc: "Làm việc với Array và mảng đa chiều.",
-      img: "https://cdn-icons-png.flaticon.com/512/1126/1126856.png",
+      id: "network08",
+      title: "Bảo Mật Dữ Liệu Mạng",
+      desc: "SSL, TLS và các kỹ thuật mã hóa giúp an toàn trong truyền thông mạng.",
+      img: "https://cdn-icons-png.flaticon.com/512/942/942748.png",
     },
     {
-      id: "java09",
-      title: "Hàm Trong Java",
-      desc: "Định nghĩa và gọi hàm trong Java.",
-      img: "https://cdn-icons-png.flaticon.com/512/3616/3616783.png",
+      id: "network09",
+      title: "Truyền File Qua Mạng",
+      desc: "Học cách gửi và nhận file thông qua TCP hoặc HTTP.",
+      img: "https://cdn-icons-png.flaticon.com/512/841/841364.png",
     },
     {
-      id: "java10",
-      title: "Lớp & Đối Tượng",
-      desc: "Hiểu về class, object và lập trình hướng đối tượng.",
-      img: "https://cdn-icons-png.flaticon.com/512/2721/2721275.png",
+      id: "network10",
+      title: "Xây Dựng Ứng Dụng Chat",
+      desc: "Thực hành tạo ứng dụng chat thời gian thực bằng socket và đa luồng.",
+      img: "https://cdn-icons-png.flaticon.com/512/2939/2939464.png",
     },
   ];
 
@@ -81,14 +81,14 @@ function Home() {
     <div className="bg-gradient-to-b from-orange-50 to-yellow-100 min-h-screen flex flex-col">
       <div className="text-center bg-orange-600 text-white py-16 shadow-lg">
         <h1 className="text-5xl font-extrabold mb-4 tracking-wide">
-          Học Lập Trình Java Từ A → Z ☕
+          Học Lập Trình Mạng Từ A → Z 🌐
         </h1>
         <p className="text-lg text-orange-100 max-w-2xl mx-auto">
-          Blog học Java miễn phí — ví dụ chi tiết, lý thuyết dễ hiểu, thực hành
-          thực tế cho người mới bắt đầu.
+          Blog chia sẻ kiến thức lập trình mạng — từ cơ bản đến nâng cao, ví dụ
+          chi tiết, dễ hiểu và thực tế.
         </p>
         <Link
-          to="/blog/java01"
+          to="/blog/network01"
           className="mt-6 inline-block bg-white text-orange-600 px-6 py-3 rounded-lg font-semibold hover:bg-orange-100 transition-all shadow-md"
         >
           Bắt đầu học ngay →
@@ -142,17 +142,23 @@ function About() {
           Lê Nguyễn Nhật Huy
         </h2>
         <p className="text-gray-700 italic mb-8 leading-relaxed px-6">
-          “Mình là một lập trình viên trẻ với niềm đam mê bất tận dành cho công nghệ
-          và giáo dục. Mình bắt đầu hành trình với Java từ con số 0 và hiểu rõ những
-          khó khăn mà người mới gặp phải — vì vậy, mình muốn chia sẻ kiến thức và
-          kinh nghiệm để giúp các bạn mới tiếp cận Java một cách dễ hiểu, sinh động
-          và thực tế nhất. Ngoài việc lập trình, mình cũng yêu thích đọc truyện,
-          chơi game và khám phá những điều mới mẻ trong cuộc sống, vì mình tin rằng
-          công nghệ không chỉ là code — mà còn là cách chúng ta sáng tạo ra giá trị
-          cho mọi người.”
+          “Mình là lập trình viên trẻ đam mê công nghệ, đặc biệt trong lĩnh vực
+          lập trình mạng và bảo mật. Blog này được tạo ra để chia sẻ kiến thức
+          về mạng máy tính, socket, API, và những ứng dụng thực tế mà mình đã
+          học và xây dựng.”
         </p>
 
-        {/* Kết nối với tôi */}
+        <div className="bg-orange-100 p-6 rounded-xl shadow-inner mb-8">
+          <h3 className="text-2xl font-semibold text-orange-700 mb-2">
+            🎮 Sở Thích Cá Nhân
+          </h3>
+          <p className="text-gray-700 leading-relaxed">
+            Ngoài việc nghiên cứu lập trình mạng, mình thích đọc truyện, chơi
+            game và khám phá công nghệ mới. Mình tin rằng lập trình là cách để
+            kết nối con người – không chỉ qua mạng, mà còn qua tri thức.
+          </p>
+        </div>
+
         <h3 className="text-2xl font-bold text-orange-700 mb-6 mt-12 text-center flex items-center justify-center gap-2">
           <i className="fas fa-globe text-blue-500"></i> Kết Nối Với Tôi
         </h3>
@@ -199,7 +205,6 @@ function About() {
             </p>
           </div>
 
-          {/* Icon mạng xã hội */}
           <div className="flex justify-center gap-8 mt-10">
             <a
               href="https://facebook.com/javablog"
@@ -250,7 +255,8 @@ function Contact() {
         📞 Liên Hệ Với Chúng Tôi
       </h1>
       <p className="text-center text-gray-700 mb-8">
-        Nếu bạn có câu hỏi, góp ý hoặc muốn hợp tác, đừng ngần ngại liên hệ!
+        Nếu bạn có câu hỏi, góp ý hoặc muốn hợp tác trong dự án lập trình mạng,
+        đừng ngần ngại liên hệ!
       </p>
       <form className="bg-white max-w-lg mx-auto shadow-lg rounded-2xl p-6 space-y-4 border border-orange-100">
         <input
@@ -299,16 +305,16 @@ export default function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/blog/java01" element={<Java01_GioiThieu />} />
-            <Route path="/blog/java02" element={<Java02_CaiDatMoiTruong />} />
-            <Route path="/blog/java03" element={<Java03_HelloWorld />} />
-            <Route path="/blog/java04" element={<Java04_KieuDuLieu />} />
-            <Route path="/blog/java05" element={<Java05_ToanTu />} />
-            <Route path="/blog/java06" element={<Java06_CauTrucDieuKien />} />
-            <Route path="/blog/java07" element={<Java07_VongLap />} />
-            <Route path="/blog/java08" element={<Java08_Mang />} />
-            <Route path="/blog/java09" element={<Java09_Ham />} />
-            <Route path="/blog/java10" element={<Java10_LopVaDoiTuong />} />
+            <Route path="/blog/network01" element={<Network01_GioiThieu />} />
+            <Route path="/blog/network02" element={<Network02_CauTrucMang />} />
+            <Route path="/blog/network03" element={<Network03_TCP_UDP />} />
+            <Route path="/blog/network04" element={<Network04_ClientServer />} />
+            <Route path="/blog/network05" element={<Network05_Socket />} />
+            <Route path="/blog/network06" element={<Network06_HTTP_RESTAPI />} />
+            <Route path="/blog/network07" element={<Network07_MultiThread />} />
+            <Route path="/blog/network08" element={<Network08_Security />} />
+            <Route path="/blog/network09" element={<Network09_FileTransfer />} />
+            <Route path="/blog/network10" element={<Network10_ChatApp />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
@@ -316,7 +322,7 @@ export default function App() {
 
         <footer className="bg-gray-900 text-white text-center py-6 mt-auto">
           <p className="text-sm text-gray-300">
-            © 2025 Java Blog — Học Lập Trình Cùng Cộng Đồng Việt Nam
+            © 2025 Network Blog — Học Lập Trình Mạng Cùng Cộng Đồng Việt Nam
           </p>
         </footer>
       </div>
