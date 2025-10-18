@@ -19,6 +19,7 @@ function Home() {
       id: "java01",
       title: "Giới Thiệu Java",
       desc: "Tổng quan về ngôn ngữ lập trình Java và ứng dụng.",
+      img: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
     },
     {
       id: "java02",
