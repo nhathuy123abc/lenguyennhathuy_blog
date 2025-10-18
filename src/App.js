@@ -15,7 +15,7 @@ import Java10_LopVaDoiTuong from "./pages/posts/Java10_LopVaDoiTuong";
 // === Trang chủ ===
 function Home() {
   const lessons = [
-      {
+    {
       id: "java01",
       title: "Giới Thiệu Java",
       desc: "Tổng quan về ngôn ngữ lập trình Java và ứng dụng.",
@@ -128,43 +128,106 @@ function Home() {
 // === Về Chúng Tôi ===
 function About() {
   return (
-    <div className="p-10 bg-orange-50 min-h-screen flex flex-col items-center">
-      <h1 className="text-4xl font-bold text-orange-700 mb-8">Về Chúng Tôi</h1>
-      <div className="bg-white shadow-lg rounded-2xl p-8 max-w-2xl w-full text-center border border-orange-100">
+    <div className="bg-gradient-to-b from-orange-50 to-yellow-100 min-h-screen flex flex-col items-center py-16">
+      <h1 className="text-5xl font-extrabold text-orange-700 mb-10 tracking-wide text-center">
+        ☕ Về Chúng Tôi
+      </h1>
+
+      <div className="bg-white shadow-2xl rounded-3xl p-10 max-w-3xl w-11/12 text-center border border-orange-200 transition-transform hover:scale-[1.01]">
         <img
           src="https://i.postimg.cc/pT0k0gHp/564217407-2039380046808669-4469668202512957919-n.jpg"
           alt="Lê Nguyễn Nhật Huy"
-          className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-orange-400 object-cover shadow-lg hover:scale-105 transition-transform"
+          className="w-44 h-44 rounded-full mx-auto mb-6 border-8 border-orange-300 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
         />
-        <h2 className="text-2xl font-semibold text-orange-700 mb-2">
+
+        <h2 className="text-3xl font-bold text-orange-700 mb-2">
           Lê Nguyễn Nhật Huy
         </h2>
-        <p className="text-gray-600 mb-4">
-          Lập trình viên trẻ đam mê công nghệ, chia sẻ kiến thức Java và giúp
-          mọi người bắt đầu con đường lập trình.
+        <p className="text-gray-600 italic mb-6">
+          “Lập trình viên trẻ đam mê chia sẻ kiến thức — giúp người mới tiếp cận
+          Java một cách dễ hiểu, sinh động và thực tế nhất.”
         </p>
-        <div className="text-left space-y-2 mb-6">
-          <p>
-            <span className="font-semibold text-gray-800">📧 Email:</span>{" "}
-            nhathuy2004dk@gmail.com
-          </p>
-          <p>
-            <span className="font-semibold text-gray-800">📱 Số điện thoại:</span>{" "}
-            0123 456 789
-          </p>
-          <p>
-            <span className="font-semibold text-gray-800">🌐 Facebook:</span>{" "}
-            <a
-              href="https://facebook.com/javablog"
-              className="text-blue-600 hover:underline"
-            >
-              facebook.com/javablog
+
+        <h3 className="text-2xl font-bold text-orange-700 mb-4">🎮 Sở Thích Cá Nhân</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 text-left">
+          <div className="flex items-center gap-3 bg-orange-50 p-4 rounded-xl shadow-sm hover:bg-orange-100 transition">
+            <i className="fas fa-book text-orange-600 text-2xl"></i>
+            <p className="text-gray-700">
+              <span className="font-semibold">Đọc truyện:</span> yêu thích truyện fantasy và phiêu lưu, giúp mình học cách kể chuyện và sáng tạo hơn.
+            </p>
+          </div>
+          <div className="flex items-center gap-3 bg-orange-50 p-4 rounded-xl shadow-sm hover:bg-orange-100 transition">
+            <i className="fas fa-gamepad text-orange-600 text-2xl"></i>
+            <p className="text-gray-700">
+              <span className="font-semibold">Chơi game:</span> thích game chiến thuật và mô phỏng — vừa giải trí vừa rèn tư duy logic 🎮.
+            </p>
+          </div>
+        </div>
+
+        {/* 🌐 Kết Nối Với Tôi */}
+        <h3 className="text-2xl font-bold text-orange-700 mb-6 mt-12 text-center">
+          🌐 Kết Nối Với Tôi
+        </h3>
+
+        
+        {/* Thông tin liên hệ */}
+        <div className="bg-orange-50 rounded-3xl shadow-inner border border-orange-200 p-8 text-left max-w-2xl mx-auto">
+          <div className="space-y-4 text-lg text-gray-800">
+            <p className="flex items-center gap-3">
+              <i className="fas fa-envelope text-blue-600 text-2xl"></i>
+              <span>
+                <strong>Email:</strong>{" "}
+                <a
+                  href="mailto:nhathuy2004dk@gmail.com"
+                  className="text-blue-600 hover:text-blue-800 hover:underline transition"
+                >
+                  nhathuy2004dk@gmail.com
+                </a>
+              </span>
+            </p>
+            <p className="flex items-center gap-3">
+              <i className="fas fa-phone-alt text-green-600 text-2xl"></i>
+              <span>
+                <strong>Số điện thoại:</strong> 0123 456 789
+              </span>
+            </p>
+            <p className="flex items-center gap-3">
+              <i className="fab fa-facebook text-blue-600 text-2xl"></i>
+              <span>
+                <strong>Facebook:</strong>{" "}
+                <a
+                  href="https://facebook.com/javablog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 hover:underline transition"
+                >
+                  facebook.com/javablog
+                </a>
+              </span>
+            </p>
+            <p className="flex items-center gap-3">
+              <i className="fas fa-map-marker-alt text-pink-600 text-2xl"></i>
+              <span>
+                <strong>Địa chỉ:</strong> TP. Hồ Chí Minh, Việt Nam
+              </span>
+            </p>
+          </div>
+
+          {/* Biểu tượng mạng xã hội cuối */}
+          <div className="flex justify-center gap-8 mt-10">
+            <a href="https://facebook.com/javablog" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-3xl transition-transform hover:scale-110" title="Facebook">
+              <i className="fab fa-facebook"></i>
             </a>
-          </p>
-          <p>
-            <span className="font-semibold text-gray-800">📍 Địa chỉ:</span> TP.
-            Hồ Chí Minh, Việt Nam
-          </p>
+            <a href="https://github.com/nhathuy2004dk" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-black text-3xl transition-transform hover:scale-110" title="GitHub">
+              <i className="fab fa-github"></i>
+            </a>
+            <a href="mailto:nhathuy2004dk@gmail.com" className="text-red-500 hover:text-red-700 text-3xl transition-transform hover:scale-110" title="Gmail">
+              <i className="fas fa-envelope"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 text-3xl transition-transform hover:scale-110" title="LinkedIn">
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
