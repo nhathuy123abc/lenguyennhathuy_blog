@@ -93,12 +93,11 @@ function About() {
       <h1 className="text-4xl font-bold text-orange-700 mb-8">Về Chúng Tôi</h1>
 
       <div className="bg-white shadow-lg rounded-2xl p-8 max-w-2xl w-full text-center border border-orange-100">
-        <img
-          src="/images/huy.jpg"
-          alt="Avatar"
-          className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-orange-300 object-cover shadow-md hover:scale-105 transition-transform"
-        />
-
+                  <img
+            src="https://scontent.fsgn5-13.fna.fbcdn.net/v/t39.30808-1/564217407_2039380046808669_4469668202512957919_n.jpg?stp=c0.46.747.747a_dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeH-lLhTtgJ9ToOzPpo-gXBfHX9tFCOSPT0df20UI5I9PabfXbQeGklBpZ91Tsxynx7eyo9Jd8xzmoRNUqsjtl99&_nc_ohc=_gadpPBcYN8Q7kNvwHykdRQ&_nc_oc=AdkjFZzLPupbg1s2yICm7GgMrdLw4EHVrSCdqG4UmbeKZb275W8L9Ge37764tFmYqAg&_nc_zt=24&_nc_ht=scontent.fsgn5-13.fna&_nc_gid=9nEuliMGLX0Rl2cB6P34LA&oh=00_AfeawIrrrmDfye03pm31HukdB1h8Z7ElmnzplU-XI3vH9A&oe=68F8D8E4"
+            alt="Lê Nguyễn Nhật Huy"
+            className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-orange-400 object-cover shadow-lg hover:scale-105 transition-transform"
+          />
         <h2 className="text-2xl font-semibold text-orange-700 mb-2">
           Lê Nguyễn Nhật Huy
         </h2>
