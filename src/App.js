@@ -12,7 +12,7 @@ import Java08_Mang from "./pages/posts/Java08_Mang";
 import Java09_Ham from "./pages/posts/Java09_Ham";
 import Java10_LopVaDoiTuong from "./pages/posts/Java10_LopVaDoiTuong";
 
-// === Trang chủ có banner + card bài viết ===
+// === Trang chủ ===
 function Home() {
   const lessons = [
     { id: "java01", title: "Giới Thiệu Java", desc: "Tổng quan về ngôn ngữ lập trình Java và ứng dụng." },
@@ -29,7 +29,6 @@ function Home() {
 
   return (
     <div className="bg-gradient-to-b from-orange-50 to-yellow-100 min-h-screen">
-      {/* Banner */}
       <div className="text-center bg-orange-600 text-white py-16 shadow-lg">
         <h1 className="text-5xl font-extrabold mb-4 tracking-wide">Học Lập Trình Java Từ A → Z ☕</h1>
         <p className="text-lg text-orange-100 max-w-2xl mx-auto">
@@ -43,7 +42,6 @@ function Home() {
         </Link>
       </div>
 
-      {/* Danh sách bài học */}
       <div className="p-10 grid md:grid-cols-3 sm:grid-cols-1 gap-8 max-w-6xl mx-auto">
         {lessons.map((lesson) => (
           <div
@@ -65,57 +63,27 @@ function Home() {
   );
 }
 
-// === Trang danh sách blog ===
-function Blog() {
-  return (
-    <div className="p-10 bg-orange-50 min-h-screen">
-      <h1 className="text-4xl font-bold text-orange-700 mb-6 text-center">📚 Danh Sách Bài Học Java</h1>
-      <ul className="space-y-4 text-lg max-w-2xl mx-auto">
-        <li><Link to="/blog/java01" className="text-blue-600 hover:underline">1️⃣ Giới Thiệu Java</Link></li>
-        <li><Link to="/blog/java02" className="text-blue-600 hover:underline">2️⃣ Cài Đặt Môi Trường</Link></li>
-        <li><Link to="/blog/java03" className="text-blue-600 hover:underline">3️⃣ Hello World</Link></li>
-        <li><Link to="/blog/java04" className="text-blue-600 hover:underline">4️⃣ Kiểu Dữ Liệu</Link></li>
-        <li><Link to="/blog/java05" className="text-blue-600 hover:underline">5️⃣ Toán Tử</Link></li>
-        <li><Link to="/blog/java06" className="text-blue-600 hover:underline">6️⃣ Cấu Trúc Điều Kiện</Link></li>
-        <li><Link to="/blog/java07" className="text-blue-600 hover:underline">7️⃣ Vòng Lặp</Link></li>
-        <li><Link to="/blog/java08" className="text-blue-600 hover:underline">8️⃣ Mảng Trong Java</Link></li>
-        <li><Link to="/blog/java09" className="text-blue-600 hover:underline">9️⃣ Hàm Trong Java</Link></li>
-        <li><Link to="/blog/java10" className="text-blue-600 hover:underline">🔟 Lớp & Đối Tượng</Link></li>
-      </ul>
-    </div>
-  );
-}
-
-// === Về Chúng Tôi (đã thêm ảnh & thông tin cá nhân) ===
+// === Về Chúng Tôi ===
 function About() {
   return (
     <div className="p-10 bg-orange-50 min-h-screen flex flex-col items-center">
       <h1 className="text-4xl font-bold text-orange-700 mb-8">Về Chúng Tôi</h1>
-
       <div className="bg-white shadow-lg rounded-2xl p-8 max-w-2xl w-full text-center border border-orange-100">
-                  <img
-            src="https://scontent.fsgn5-13.fna.fbcdn.net/v/t39.30808-1/564217407_2039380046808669_4469668202512957919_n.jpg?stp=c0.46.747.747a_dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeH-lLhTtgJ9ToOzPpo-gXBfHX9tFCOSPT0df20UI5I9PabfXbQeGklBpZ91Tsxynx7eyo9Jd8xzmoRNUqsjtl99&_nc_ohc=_gadpPBcYN8Q7kNvwHykdRQ&_nc_oc=AdkjFZzLPupbg1s2yICm7GgMrdLw4EHVrSCdqG4UmbeKZb275W8L9Ge37764tFmYqAg&_nc_zt=24&_nc_ht=scontent.fsgn5-13.fna&_nc_gid=9nEuliMGLX0Rl2cB6P34LA&oh=00_AfeawIrrrmDfye03pm31HukdB1h8Z7ElmnzplU-XI3vH9A&oe=68F8D8E4"
-            alt="Lê Nguyễn Nhật Huy"
-            className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-orange-400 object-cover shadow-lg hover:scale-105 transition-transform"
-          />
-        <h2 className="text-2xl font-semibold text-orange-700 mb-2">
-          Lê Nguyễn Nhật Huy
-        </h2>
+        <img
+          src="https://scontent.fsgn5-13.fna.fbcdn.net/v/t39.30808-1/564217407_2039380046808669_4469668202512957919_n.jpg"
+          alt="Lê Nguyễn Nhật Huy"
+          className="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-orange-400 object-cover shadow-lg hover:scale-105 transition-transform"
+        />
+        <h2 className="text-2xl font-semibold text-orange-700 mb-2">Lê Nguyễn Nhật Huy</h2>
         <p className="text-gray-600 mb-4">
           Lập trình viên trẻ đam mê công nghệ, chia sẻ kiến thức Java và giúp mọi người bắt đầu con đường lập trình.
         </p>
-
         <div className="text-left space-y-2 mb-6">
           <p><span className="font-semibold text-gray-800">📧 Email:</span> nhathuy2004dk@gmail.com</p>
           <p><span className="font-semibold text-gray-800">📱 Số điện thoại:</span> 0123 456 789</p>
           <p><span className="font-semibold text-gray-800">🌐 Facebook:</span> <a href="https://facebook.com/javablog" className="text-blue-600 hover:underline">facebook.com/javablog</a></p>
           <p><span className="font-semibold text-gray-800">📍 Địa chỉ:</span> TP. Hồ Chí Minh, Việt Nam</p>
         </div>
-
-        <p className="text-gray-700 leading-relaxed">
-          “Mình tin rằng lập trình không chỉ là kỹ năng, mà còn là nghệ thuật sáng tạo.  
-          Java Blog ra đời để giúp các bạn học lập trình dễ dàng, vui vẻ và thực tế hơn.”
-        </p>
       </div>
     </div>
   );
@@ -129,7 +97,6 @@ function Contact() {
       <p className="text-center text-gray-700 mb-8">
         Nếu bạn có câu hỏi, góp ý hoặc muốn hợp tác, đừng ngần ngại liên hệ!
       </p>
-
       <form className="bg-white max-w-lg mx-auto shadow-lg rounded-2xl p-6 space-y-4 border border-orange-100">
         <input type="text" placeholder="Họ và tên" className="w-full border p-3 rounded-md focus:ring-2 focus:ring-orange-400 outline-none" />
         <input type="email" placeholder="Email" className="w-full border p-3 rounded-md focus:ring-2 focus:ring-orange-400 outline-none" />
@@ -142,42 +109,45 @@ function Contact() {
   );
 }
 
-// === App chính ===
+// === App chính (footer auto ở đáy) ===
 export default function App() {
   return (
     <Router>
-      {/* Navbar */}
-      <nav className="bg-orange-600 text-white p-4 flex flex-wrap justify-center gap-6 text-lg font-semibold shadow-md">
-        <Link to="/" className="hover:text-yellow-200">Trang Chủ</Link>
-        <Link to="/blog" className="hover:text-yellow-200">Blog</Link>
-        <Link to="/about" className="hover:text-yellow-200">Về Chúng Tôi</Link>
-        <Link to="/contact" className="hover:text-yellow-200">Liên Hệ</Link>
-      </nav>
+      <div className="flex flex-col min-h-screen">
+        {/* Navbar */}
+        <nav className="bg-orange-600 text-white p-4 flex flex-wrap justify-center gap-6 text-lg font-semibold shadow-md">
+          <Link to="/" className="hover:text-yellow-200">Trang Chủ</Link>
+          <Link to="/blog" className="hover:text-yellow-200">Blog</Link>
+          <Link to="/about" className="hover:text-yellow-200">Về Chúng Tôi</Link>
+          <Link to="/contact" className="hover:text-yellow-200">Liên Hệ</Link>
+        </nav>
 
-      {/* Routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/java01" element={<Java01_GioiThieu />} />
-        <Route path="/blog/java02" element={<Java02_CaiDatMoiTruong />} />
-        <Route path="/blog/java03" element={<Java03_HelloWorld />} />
-        <Route path="/blog/java04" element={<Java04_KieuDuLieu />} />
-        <Route path="/blog/java05" element={<Java05_ToanTu />} />
-        <Route path="/blog/java06" element={<Java06_CauTrucDieuKien />} />
-        <Route path="/blog/java07" element={<Java07_VongLap />} />
-        <Route path="/blog/java08" element={<Java08_Mang />} />
-        <Route path="/blog/java09" element={<Java09_Ham />} />
-        <Route path="/blog/java10" element={<Java10_LopVaDoiTuong />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+        {/* Nội dung chính */}
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog/java01" element={<Java01_GioiThieu />} />
+            <Route path="/blog/java02" element={<Java02_CaiDatMoiTruong />} />
+            <Route path="/blog/java03" element={<Java03_HelloWorld />} />
+            <Route path="/blog/java04" element={<Java04_KieuDuLieu />} />
+            <Route path="/blog/java05" element={<Java05_ToanTu />} />
+            <Route path="/blog/java06" element={<Java06_CauTrucDieuKien />} />
+            <Route path="/blog/java07" element={<Java07_VongLap />} />
+            <Route path="/blog/java08" element={<Java08_Mang />} />
+            <Route path="/blog/java09" element={<Java09_Ham />} />
+            <Route path="/blog/java10" element={<Java10_LopVaDoiTuong />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white text-center py-6 mt-10">
-        <p className="text-sm text-gray-300">
-          © 2025 Java Blog — Học Lập Trình Cùng Cộng Đồng Việt Nam
-        </p>
-      </footer>
+        {/* Footer */}
+        <footer className="bg-gray-900 text-white text-center py-6">
+          <p className="text-sm text-gray-300">
+            © 2025 Java Blog — Học Lập Trình Cùng Cộng Đồng Việt Nam
+          </p>
+        </footer>
+      </div>
     </Router>
   );
 }

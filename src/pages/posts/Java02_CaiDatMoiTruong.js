@@ -1,25 +1,18 @@
 export default function Java02_CaiDatMoiTruong() {
   return (
-    <div className="p-10 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold text-orange-700 mb-4">
-        Cài Đặt Môi Trường Lập Trình Java
-      </h1>
-      <p className="text-gray-700 leading-relaxed whitespace-pre-line">
-        🔹 Bước 1: Tải JDK
-        Truy cập: https://www.oracle.com/java/technologies/downloads/
-
-        🔹 Bước 2: Cài đặt và kiểm tra
-        Mở terminal hoặc CMD:
-        {"\n"}java -version
-        {"\n"}javac -version
-
-        🔹 Bước 3: Cài IDE
-        - IntelliJ IDEA
-        - Eclipse
-        - VS Code (kèm plugin Java)
-
-        Sau khi cài xong, bạn đã sẵn sàng viết chương trình đầu tiên bằng Java.
-      </p>
+    <div className="p-10 max-w-3xl mx-auto bg-white text-gray-800 rounded-xl shadow-lg">
+      <h1 className="text-4xl font-bold text-orange-600 mb-6 text-center">Cài Đặt Môi Trường Java 🧩</h1>
+      <div className="space-y-5 leading-relaxed">
+        <p>🔹 Bước 1: Tải JDK (Java Development Kit)</p>
+        <p>Truy cập: <a href="https://www.oracle.com/java/technologies/downloads/" className="text-blue-600 hover:underline">https://www.oracle.com/java/technologies/downloads/</a></p>
+        <p>🔹 Bước 2: Cài đặt và kiểm tra phiên bản Java:</p>
+        <pre className="bg-black text-green-300 p-4 rounded-lg">
+{`java -version
+javac -version`}
+        </pre>
+        <p>✅ Nếu hiển thị phiên bản như <code>java version "17.0.2"</code> thì bạn đã cài thành công.</p>
+        <p>🔹 Bước 3: Cài đặt IDE: IntelliJ IDEA, Eclipse hoặc VS Code.</p>
+      </div>
     </div>
   );
 }

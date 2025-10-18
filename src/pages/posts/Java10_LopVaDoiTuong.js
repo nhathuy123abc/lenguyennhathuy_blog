@@ -1,29 +1,29 @@
 export default function Java10_LopVaDoiTuong() {
   return (
-    <div className="p-10 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold text-orange-700 mb-4">
-        Lớp Và Đối Tượng Trong Java
-      </h1>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg mb-4">
-{`class SinhVien {
-  String ten;
-  int tuoi;
+    <div className="p-10 max-w-3xl mx-auto bg-white text-gray-800 rounded-xl shadow-lg">
+      <h1 className="text-4xl font-bold text-orange-600 mb-6 text-center">🧩 Lớp & Đối Tượng Trong Java</h1>
+      <div className="space-y-5 leading-relaxed">
+        <p>🔹 Java là ngôn ngữ hướng đối tượng, dựa trên khái niệm “class” và “object”.</p>
+        <pre className="bg-black text-green-300 p-4 rounded-lg">
+{`class Student {
+  String name;
+  int age;
 
-  void hienThi() {
-    System.out.println(ten + " - " + tuoi);
+  void study() {
+    System.out.println(name + " đang học Java");
   }
 }
 
 public class Main {
   public static void main(String[] args) {
-    SinhVien sv = new SinhVien();
-    sv.ten = "Huy";
-    sv.tuoi = 20;
-    sv.hienThi();
+    Student s = new Student();
+    s.name = "Huy";
+    s.age = 20;
+    s.study();
   }
 }`}
-      </pre>
-      <p className="text-gray-700">Đây là nền tảng của lập trình hướng đối tượng trong Java.</p>
+        </pre>
+      </div>
     </div>
   );
 }

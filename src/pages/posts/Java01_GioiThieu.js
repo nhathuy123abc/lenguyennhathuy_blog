@@ -1,23 +1,32 @@
 export default function Java01_GioiThieu() {
   return (
-    <div className="p-10 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold text-orange-700 mb-4">
-        Giới Thiệu Ngôn Ngữ Lập Trình Java
+    <div className="p-10 max-w-3xl mx-auto bg-white text-gray-800 rounded-xl shadow-lg">
+      <h1 className="text-4xl font-bold text-orange-600 mb-6 text-center">
+        Giới Thiệu Java ☕
       </h1>
-      <p className="text-gray-700 leading-relaxed whitespace-pre-line">
-        Java là ngôn ngữ lập trình hướng đối tượng được phát triển bởi Sun Microsystems (nay thuộc Oracle).
-        Nó mạnh mẽ, đa nền tảng và rất phổ biến trong phát triển phần mềm, web, và Android.
-
-        💡 Ưu điểm chính:
-        - Chạy được trên mọi hệ điều hành (Windows, macOS, Linux)
-        - Cú pháp thân thiện, dễ hiểu
-        - Có cộng đồng lớn và nhiều thư viện hỗ trợ
-
-        ⚙️ Ứng dụng:
-        - Ứng dụng web (Spring Boot)
-        - Ứng dụng Android
-        - Phần mềm doanh nghiệp (ERP, CRM)
-      </p>
+      <div className="space-y-5 leading-relaxed">
+        <p>
+          🔹 Java là ngôn ngữ lập trình hướng đối tượng mạnh mẽ, được phát triển
+          bởi Sun Microsystems (nay là Oracle).
+        </p>
+        <p>🔸 Ưu điểm nổi bật của Java:</p>
+        <ul className="list-disc ml-6 space-y-1">
+          <li>Chạy đa nền tảng — “Write once, run anywhere”.</li>
+          <li>Bảo mật cao và có Garbage Collector tự động.</li>
+          <li>Cộng đồng lớn, tài liệu học phong phú.</li>
+        </ul>
+        <p>
+          💡 Java thường được dùng để phát triển ứng dụng Android, web backend
+          và phần mềm doanh nghiệp.
+        </p>
+        <pre className="bg-black text-green-300 p-4 rounded-lg">
+{`public class Hello {
+  public static void main(String[] args) {
+    System.out.println("Xin chào Java!");
+  }
+}`}
+        </pre>
+      </div>
     </div>
   );
 }
