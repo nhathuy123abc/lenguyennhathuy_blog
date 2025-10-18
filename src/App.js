@@ -79,7 +79,6 @@ function Home() {
 
   return (
     <div className="bg-gradient-to-b from-orange-50 to-yellow-100 min-h-screen flex flex-col">
-      {/* Banner */}
       <div className="text-center bg-orange-600 text-white py-16 shadow-lg">
         <h1 className="text-5xl font-extrabold mb-4 tracking-wide">
           Học Lập Trình Java Từ A → Z ☕
@@ -96,7 +95,6 @@ function Home() {
         </Link>
       </div>
 
-      {/* Danh sách bài học */}
       <div className="p-10 grid md:grid-cols-3 sm:grid-cols-1 gap-8 max-w-6xl mx-auto flex-grow">
         {lessons.map((lesson) => (
           <div
@@ -143,34 +141,22 @@ function About() {
         <h2 className="text-3xl font-bold text-orange-700 mb-2">
           Lê Nguyễn Nhật Huy
         </h2>
-        <p className="text-gray-600 italic mb-6">
-          “Lập trình viên trẻ đam mê chia sẻ kiến thức — giúp người mới tiếp cận
-          Java một cách dễ hiểu, sinh động và thực tế nhất.”
+        <p className="text-gray-700 italic mb-8 leading-relaxed px-6">
+          “Mình là một lập trình viên trẻ với niềm đam mê bất tận dành cho công nghệ
+          và giáo dục. Mình bắt đầu hành trình với Java từ con số 0 và hiểu rõ những
+          khó khăn mà người mới gặp phải — vì vậy, mình muốn chia sẻ kiến thức và
+          kinh nghiệm để giúp các bạn mới tiếp cận Java một cách dễ hiểu, sinh động
+          và thực tế nhất. Ngoài việc lập trình, mình cũng yêu thích đọc truyện,
+          chơi game và khám phá những điều mới mẻ trong cuộc sống, vì mình tin rằng
+          công nghệ không chỉ là code — mà còn là cách chúng ta sáng tạo ra giá trị
+          cho mọi người.”
         </p>
 
-        <h3 className="text-2xl font-bold text-orange-700 mb-4">🎮 Sở Thích Cá Nhân</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10 text-left">
-          <div className="flex items-center gap-3 bg-orange-50 p-4 rounded-xl shadow-sm hover:bg-orange-100 transition">
-            <i className="fas fa-book text-orange-600 text-2xl"></i>
-            <p className="text-gray-700">
-              <span className="font-semibold">Đọc truyện:</span> yêu thích truyện fantasy và phiêu lưu, giúp mình học cách kể chuyện và sáng tạo hơn.
-            </p>
-          </div>
-          <div className="flex items-center gap-3 bg-orange-50 p-4 rounded-xl shadow-sm hover:bg-orange-100 transition">
-            <i className="fas fa-gamepad text-orange-600 text-2xl"></i>
-            <p className="text-gray-700">
-              <span className="font-semibold">Chơi game:</span> thích game chiến thuật và mô phỏng — vừa giải trí vừa rèn tư duy logic 🎮.
-            </p>
-          </div>
-        </div>
-
-        {/* 🌐 Kết Nối Với Tôi */}
-        <h3 className="text-2xl font-bold text-orange-700 mb-6 mt-12 text-center">
-          🌐 Kết Nối Với Tôi
+        {/* Kết nối với tôi */}
+        <h3 className="text-2xl font-bold text-orange-700 mb-6 mt-12 text-center flex items-center justify-center gap-2">
+          <i className="fas fa-globe text-blue-500"></i> Kết Nối Với Tôi
         </h3>
 
-        
-        {/* Thông tin liên hệ */}
         <div className="bg-orange-50 rounded-3xl shadow-inner border border-orange-200 p-8 text-left max-w-2xl mx-auto">
           <div className="space-y-4 text-lg text-gray-800">
             <p className="flex items-center gap-3">
@@ -213,18 +199,40 @@ function About() {
             </p>
           </div>
 
-          {/* Biểu tượng mạng xã hội cuối */}
+          {/* Icon mạng xã hội */}
           <div className="flex justify-center gap-8 mt-10">
-            <a href="https://facebook.com/javablog" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-3xl transition-transform hover:scale-110" title="Facebook">
+            <a
+              href="https://facebook.com/javablog"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 text-3xl transition-transform hover:scale-110"
+              title="Facebook"
+            >
               <i className="fab fa-facebook"></i>
             </a>
-            <a href="https://github.com/nhathuy2004dk" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-black text-3xl transition-transform hover:scale-110" title="GitHub">
+            <a
+              href="https://github.com/nhathuy2004dk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-800 hover:text-black text-3xl transition-transform hover:scale-110"
+              title="GitHub"
+            >
               <i className="fab fa-github"></i>
             </a>
-            <a href="mailto:nhathuy2004dk@gmail.com" className="text-red-500 hover:text-red-700 text-3xl transition-transform hover:scale-110" title="Gmail">
+            <a
+              href="mailto:nhathuy2004dk@gmail.com"
+              className="text-red-500 hover:text-red-700 text-3xl transition-transform hover:scale-110"
+              title="Gmail"
+            >
               <i className="fas fa-envelope"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 text-3xl transition-transform hover:scale-110" title="LinkedIn">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-700 text-3xl transition-transform hover:scale-110"
+              title="LinkedIn"
+            >
               <i className="fab fa-linkedin"></i>
             </a>
           </div>
@@ -276,7 +284,6 @@ export default function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        {/* Navbar */}
         <nav className="bg-orange-600 text-white p-4 flex flex-wrap justify-center gap-6 text-lg font-semibold shadow-md">
           <Link to="/" className="hover:text-yellow-200">
             Trang Chủ
@@ -289,7 +296,6 @@ export default function App() {
           </Link>
         </nav>
 
-        {/* Nội dung chính */}
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -308,7 +314,6 @@ export default function App() {
           </Routes>
         </div>
 
-        {/* Footer */}
         <footer className="bg-gray-900 text-white text-center py-6 mt-auto">
           <p className="text-sm text-gray-300">
             © 2025 Java Blog — Học Lập Trình Cùng Cộng Đồng Việt Nam
