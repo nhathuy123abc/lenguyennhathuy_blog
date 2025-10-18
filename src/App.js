@@ -15,11 +15,10 @@ import Java10_LopVaDoiTuong from "./pages/posts/Java10_LopVaDoiTuong";
 // === Trang chủ ===
 function Home() {
   const lessons = [
-    {
+      {
       id: "java01",
       title: "Giới Thiệu Java",
       desc: "Tổng quan về ngôn ngữ lập trình Java và ứng dụng.",
-      img: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
     },
     {
       id: "java02",
