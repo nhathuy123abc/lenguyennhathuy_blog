@@ -227,6 +227,36 @@ function About() {
     </li>
   </ul>
 </div>
+{/* --- Cảm nghĩ bản thân sau khi viết các trang web --- */}
+<div className="bg-white border-l-4 border-orange-500 shadow-inner p-6 mb-10 text-left rounded-xl">
+  <h3 className="text-2xl font-semibold text-orange-700 mb-3">
+    💬 Cảm Nghĩ Sau Khi Viết Các Trang Web
+  </h3>
+  <p className="text-gray-700 leading-relaxed mb-4">
+    Sau khi hoàn thành những dự án như <strong>Website Quản lý Sinh viên</strong>,{" "}
+    <strong>Website Bán hàng Trực tuyến</strong> và{" "}
+    <strong>Blog Lập Trình Mạng</strong>, mình cảm thấy bản thân đã trưởng thành
+    hơn rất nhiều trong cách suy nghĩ và tiếp cận công nghệ.
+  </p>
+  <p className="text-gray-700 leading-relaxed mb-4">
+    Ban đầu, việc thiết kế và xây dựng một website hoàn chỉnh thật sự là thử thách —
+    phải vừa hiểu về <strong>backend</strong>, vừa lo cho <strong>giao diện người dùng</strong>,
+    rồi xử lý những lỗi bất ngờ trong quá trình chạy. Nhưng chính những khó khăn đó
+    lại giúp mình hiểu sâu hơn về cách một hệ thống hoạt động từ trong ra ngoài.
+  </p>
+  <p className="text-gray-700 leading-relaxed mb-4">
+    Mỗi dự án hoàn thành là một cột mốc đáng nhớ, không chỉ vì kết quả cuối cùng, mà
+    còn vì hành trình học hỏi phía sau: cách tổ chức mã nguồn gọn gàng hơn, tối ưu
+    hiệu năng, bảo mật dữ liệu người dùng, và đặc biệt là biết cách làm việc có kế
+    hoạch, không nóng vội.
+  </p>
+  <p className="text-gray-700 leading-relaxed">
+    Bây giờ nhìn lại, mình thấy tự tin hơn rất nhiều — không chỉ vì đã làm ra những
+    sản phẩm có thể sử dụng thực tế, mà còn vì hiểu rằng{" "}
+    <strong>lập trình không chỉ là code, mà là quá trình rèn luyện tư duy, kiên nhẫn
+    và đam mê.</strong>
+  </p>
+</div>
 
 {/* --- Thành tựu --- */}
 <div className="bg-white border-l-4 border-orange-500 shadow-inner p-6 mb-8 text-left rounded-xl">
