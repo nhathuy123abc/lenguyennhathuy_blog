@@ -169,11 +169,11 @@ function About() {
           </h3>
           <ul className="list-disc pl-6 space-y-2 text-gray-700">
             <li>
-              <strong>Trường:</strong> Đại học Công nghệ Thông tin – Đại học
+              <strong>Trường:</strong> Hutech – Đại học
               Quốc gia TP.HCM
             </li>
             <li>
-              <strong>Chuyên ngành:</strong> Kỹ thuật Phần mềm / Lập trình mạng
+              <strong>Chuyên ngành:</strong> Công nghệ thông tin
             </li>
             <li>
               <strong>Năm học:</strong> 2022 – nay
@@ -328,7 +328,7 @@ function About() {
             <p className="flex items-center gap-3">
               <i className="fas fa-phone-alt text-green-600 text-2xl"></i>
               <span>
-                <strong>Số điện thoại:</strong> 0123 456 789
+                <strong>Số điện thoại:</strong> 0333445477
               </span>
             </p>
             <p className="flex items-center gap-3">
