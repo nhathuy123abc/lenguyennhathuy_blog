@@ -197,25 +197,37 @@ function About() {
         </div>
 
         {/* --- Dự án tiêu biểu --- */}
-        <div className="bg-white border-l-4 border-orange-500 shadow-inner p-6 mb-8 text-left rounded-xl">
-          <h3 className="text-2xl font-semibold text-orange-700 mb-3">
-            🚀 Dự Án Tiêu Biểu
-          </h3>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-            <li>
-              <strong>ChatApp:</strong> Ứng dụng chat thời gian thực bằng
-              Socket.io & đa luồng.
-            </li>
-            <li>
-              <strong>File Transfer System:</strong> Công cụ chia sẻ tệp giữa
-              các máy thông qua TCP.
-            </li>
-            <li>
-              <strong>REST API Server:</strong> Dự án mini mô phỏng hệ thống
-              API bảo mật JWT.
-            </li>
-          </ul>
-        </div>
+        {/* --- Dự án & Kinh nghiệm thực tế --- */}
+<div className="bg-white border-l-4 border-orange-500 shadow-inner p-6 mb-8 text-left rounded-xl">
+  <h3 className="text-2xl font-semibold text-orange-700 mb-3">
+    🚀 Dự Án & Kinh Nghiệm Thực Tế
+  </h3>
+  <ul className="list-disc pl-6 space-y-4 text-gray-700">
+    <li>
+      <strong>Website Quản lý Sinh viên:</strong> Xây dựng hệ thống web cho phép quản lý sinh viên, lớp học, điểm số, 
+      và phân quyền người dùng (Admin / Giáo viên / Sinh viên).  
+      <br />
+      <em>Vai trò:</em> Backend Developer (Node.js, Express, MySQL).  
+      <br />
+      <em>Kết quả:</em> Hệ thống hoạt động ổn định, có thể mở rộng cho nhiều người dùng.
+    </li>
+
+    <li>
+      <strong>Website Bán hàng trực tuyến:</strong> Thiết kế và xây dựng website thương mại điện tử với các chức năng 
+      đăng nhập, giỏ hàng, thanh toán và quản lý sản phẩm.  
+      <br />
+      <em>Vai trò:</em> Fullstack Developer (React, Node.js, MongoDB).  
+      <br />
+      <em>Kết quả:</em> Hoàn thiện luồng CRUD sản phẩm, tích hợp API đơn hàng, và giao diện responsive.
+    </li>
+
+    <li>
+      <strong>Blog Lập Trình Mạng:</strong> Dự án cá nhân chia sẻ kiến thức học tập và lập trình mạng 
+      (dự án hiện tại 🌐).
+    </li>
+  </ul>
+</div>
+
 {/* --- Thành tựu --- */}
 <div className="bg-white border-l-4 border-orange-500 shadow-inner p-6 mb-8 text-left rounded-xl">
   <h3 className="text-2xl font-semibold text-orange-700 mb-4 flex items-center gap-3">
