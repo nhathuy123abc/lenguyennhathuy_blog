@@ -124,6 +124,7 @@ function Home() {
 }
 
 // === Về Chúng Tôi ===
+// === Về Chúng Tôi ===
 function About() {
   return (
     <div className="bg-gradient-to-b from-orange-50 to-yellow-100 min-h-screen flex flex-col items-center py-16">
@@ -148,17 +149,164 @@ function About() {
           học và xây dựng.”
         </p>
 
+        {/* --- Đời sống cá nhân --- */}
         <div className="bg-orange-100 p-6 rounded-xl shadow-inner mb-8">
           <h3 className="text-2xl font-semibold text-orange-700 mb-2">
-            🎮 Sở Thích Cá Nhân
+            🌱 Đời Sống Cá Nhân
           </h3>
           <p className="text-gray-700 leading-relaxed">
-            Ngoài việc nghiên cứu lập trình mạng, mình thích đọc truyện, chơi
-            game và khám phá công nghệ mới. Mình tin rằng lập trình là cách để
-            kết nối con người – không chỉ qua mạng, mà còn qua tri thức.
+            Mình sống tại TP. Hồ Chí Minh — nơi vừa năng động vừa đầy cảm hứng
+            cho lập trình viên trẻ. Ngoài công việc, mình thích đọc truyện
+            detective, nghe nhạc lo-fi, đi cà phê cùng bạn bè và thi thoảng viết
+            vài dòng blog chia sẻ kinh nghiệm sống.
           </p>
         </div>
 
+        {/* --- Học vấn --- */}
+        <div className="bg-white border-l-4 border-orange-500 shadow-inner p-6 mb-8 text-left rounded-xl">
+          <h3 className="text-2xl font-semibold text-orange-700 mb-3">
+            🎓 Trình Độ Học Tập
+          </h3>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>
+              <strong>Trường:</strong> Đại học Công nghệ Thông tin – Đại học
+              Quốc gia TP.HCM
+            </li>
+            <li>
+              <strong>Chuyên ngành:</strong> Kỹ thuật Phần mềm / Lập trình mạng
+            </li>
+            <li>
+              <strong>Năm học:</strong> 2022 – nay
+            </li>
+          </ul>
+        </div>
+
+        {/* --- Kỹ năng chuyên môn --- */}
+        <div className="bg-orange-100 p-6 rounded-xl shadow-inner mb-8 text-left">
+          <h3 className="text-2xl font-semibold text-orange-700 mb-3">
+            💻 Kỹ Năng Chuyên Môn
+          </h3>
+          <ul className="grid grid-cols-2 gap-x-6 gap-y-2 text-gray-700">
+            <li>✔️ Lập trình C/C++ & Java</li>
+            <li>✔️ Kiến thức mạng máy tính (TCP/IP, Socket)</li>
+            <li>✔️ RESTful API & HTTP</li>
+            <li>✔️ ReactJS, Tailwind CSS</li>
+            <li>✔️ Node.js & Express</li>
+            <li>✔️ Git/GitHub & CI/CD</li>
+          </ul>
+        </div>
+
+        {/* --- Dự án tiêu biểu --- */}
+        <div className="bg-white border-l-4 border-orange-500 shadow-inner p-6 mb-8 text-left rounded-xl">
+          <h3 className="text-2xl font-semibold text-orange-700 mb-3">
+            🚀 Dự Án Tiêu Biểu
+          </h3>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>
+              <strong>ChatApp:</strong> Ứng dụng chat thời gian thực bằng
+              Socket.io & đa luồng.
+            </li>
+            <li>
+              <strong>File Transfer System:</strong> Công cụ chia sẻ tệp giữa
+              các máy thông qua TCP.
+            </li>
+            <li>
+              <strong>REST API Server:</strong> Dự án mini mô phỏng hệ thống
+              API bảo mật JWT.
+            </li>
+          </ul>
+        </div>
+{/* --- Thành tựu --- */}
+<div className="bg-white border-l-4 border-orange-500 shadow-inner p-6 mb-8 text-left rounded-xl">
+  <h3 className="text-2xl font-semibold text-orange-700 mb-4 flex items-center gap-3">
+    🏆 Thành Tựu & Chứng Chỉ Cisco
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg"
+      alt="Cisco Logo"
+      className="h-8"
+    />
+  </h3>
+
+  <ul className="list-disc pl-6 space-y-6 text-gray-700">
+    <li>
+      <strong>🎓 Networking Basics (Cisco Networking Academy)</strong>  
+      <br />
+      Hoàn thành ngày <em>18/09/2025</em>.  
+      <br />
+      Nắm vững kiến thức nền tảng về giao tiếp mạng, địa chỉ IP, IPv6, và cấu hình router không dây.
+      <br />
+      <a
+        href="https://i.postimg.cc/D0LWYCsx/Networking-Basics-Update20251018-31-94zj4q.png"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-2"
+      >
+        <img
+          src="https://i.postimg.cc/D0LWYCsx/Networking-Basics-Update20251018-31-94zj4q.png"
+          alt="Networking Basics Certificate"
+          className="w-80 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.03] transition-transform"
+        />
+      </a>
+    </li>
+
+    <li>
+      <strong>💻 JavaScript Essentials 1 (Cisco x OpenEDG JS Institute)</strong>  
+      <br />
+      Hoàn thành ngày <em>20/09/2025</em>.  
+      <br />
+      Thành thạo cú pháp cơ bản, kiểu dữ liệu, hàm và xử lý lỗi trong JavaScript.
+      <br />
+      <a
+        href="https://i.postimg.cc/15F49Y80/Java-Script-Essentials1-Update20251018-32-dedkyp.png"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-2"
+      >
+        <img
+          src="https://i.postimg.cc/15F49Y80/Java-Script-Essentials1-Update20251018-32-dedkyp.png"
+          alt="JavaScript Essentials 1 Certificate"
+          className="w-80 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.03] transition-transform"
+        />
+      </a>
+    </li>
+
+    <li>
+      <strong>🚀 JavaScript Essentials 2 (Cisco x OpenEDG JS Institute)</strong>  
+      <br />
+      Hoàn thành ngày <em>14/10/2025</em>.  
+      <br />
+      Thành thạo lập trình hướng đối tượng, bất đồng bộ (async), callback và iterator nâng cao trong JavaScript.
+      <br />
+      <a
+        href="https://i.postimg.cc/5jW4YbXK/Java-Script-Essentials2-Update20251018-32-9wjbuo.png"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-2"
+      >
+        <img
+          src="https://i.postimg.cc/5jW4YbXK/Java-Script-Essentials2-Update20251018-32-9wjbuo.png"
+          alt="JavaScript Essentials 2 Certificate"
+          className="w-80 rounded-lg shadow-md hover:shadow-lg hover:scale-[1.03] transition-transform"
+        />
+      </a>
+    </li>
+  </ul>
+</div>
+
+        {/* --- Định hướng tương lai --- */}
+        <div className="bg-orange-100 p-6 rounded-xl shadow-inner mb-10">
+          <h3 className="text-2xl font-semibold text-orange-700 mb-3">
+            🌏 Định Hướng Tương Lai
+          </h3>
+          <p className="text-gray-700 leading-relaxed">
+            Trong tương lai, mình muốn trở thành một kỹ sư phần mềm chuyên sâu
+            về lĩnh vực <strong>bảo mật mạng và hệ thống phân tán</strong>. Mục
+            tiêu của mình là xây dựng các giải pháp giúp Internet an toàn hơn và
+            dễ tiếp cận hơn cho mọi người.
+          </p>
+        </div>
+
+        {/* --- Liên hệ và mạng xã hội --- */}
         <h3 className="text-2xl font-bold text-orange-700 mb-6 mt-12 text-center flex items-center justify-center gap-2">
           <i className="fas fa-globe text-blue-500"></i> Kết Nối Với Tôi
         </h3>
@@ -246,6 +394,7 @@ function About() {
     </div>
   );
 }
+
 
 // === Liên hệ ===
 function Contact() {
