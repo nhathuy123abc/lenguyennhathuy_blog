@@ -11,6 +11,7 @@ import Network07_MultiThread from "./pages/posts/Network07_MultiThread";
 import Network08_Security from "./pages/posts/Network08_Security";
 import Network09_FileTransfer from "./pages/posts/Network09_FileTransfer";
 import Network10_ChatApp from "./pages/posts/Network10_ChatApp";
+import Thanks from "./pages/posts/Thanks";
 
 // === Trang chủ ===
 function Home() {
@@ -134,7 +135,7 @@ function About() {
 
       <div className="bg-white shadow-2xl rounded-3xl p-10 max-w-3xl w-11/12 text-center border border-orange-200 transition-transform hover:scale-[1.01]">
         <img
-          src="https://i.postimg.cc/pT0k0gHp/564217407-2039380046808669-4469668202512957919-n.jpg"
+          src="https://i.postimg.cc/VsxffRG0/z7161535332476-6a2d66e8a6ee80ea2b2886fef0e2a52e.jpg"
           alt="Lê Nguyễn Nhật Huy"
           className="w-44 h-44 rounded-full mx-auto mb-6 border-8 border-orange-300 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
         />
@@ -155,11 +156,17 @@ function About() {
             🌱 Đời Sống Cá Nhân
           </h3>
           <p className="text-gray-700 leading-relaxed">
-            Mình sống tại TP. Hồ Chí Minh — nơi vừa năng động vừa đầy cảm hứng
-            cho lập trình viên trẻ. Ngoài công việc, mình thích đọc truyện
-            detective, nghe nhạc lo-fi, đi cà phê cùng bạn bè và thi thoảng viết
-            vài dòng blog chia sẻ kinh nghiệm sống.
-          </p>
+  Mình tên là Huy, hiện đang sống và học tập tại thành phố Hồ Chí Minh. Ngoài thời gian học, mình rất thích chơi game để giải trí và rèn phản xạ nhanh. Bên cạnh đó, mình cũng có sở thích đọc truyện tranh, đặc biệt là những bộ truyện có nội dung hài hước hoặc phiêu lưu, giúp mình thư giãn sau những giờ học căng thẳng. Mình là người khá năng động, dễ hòa đồng và luôn cố gắng cân bằng giữa việc học và sở thích cá nhân.
+</p>
+
+<p className="text-gray-700 leading-relaxed mt-4">
+  🌟 <strong>Lý do cho niềm đam mê lập trình của mình</strong> xuất phát từ việc thường xuyên nghe
+  và xem các video kể lại cốt truyện của game trên mạng. Mỗi câu chuyện, mỗi thế giới trong game
+  đều khiến mình cực kỳ ấn tượng và tò mò về cách chúng được tạo ra. Chính sự tò mò ấy đã thôi thúc
+  mình tìm hiểu sâu hơn về lập trình và công nghệ, để có thể tự tay xây dựng nên những sản phẩm,
+  trò chơi hoặc ứng dụng có thể mang lại trải nghiệm thú vị cho người khác.
+</p>
+
         </div>
 
         {/* --- Học vấn --- */}
@@ -491,6 +498,9 @@ export default function App() {
           <Link to="/contact" className="hover:text-yellow-200">
             Liên Hệ
           </Link>
+          <Link to="/thanks" className="hover:text-yellow-200">
+            Lời Cảm Ơn
+          </Link>
         </nav>
 
         <div className="flex-grow">
@@ -508,6 +518,7 @@ export default function App() {
             <Route path="/blog/network10" element={<Network10_ChatApp />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/thanks" element={<Thanks />} />
           </Routes>
         </div>
 
